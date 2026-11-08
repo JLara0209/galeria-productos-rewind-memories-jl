@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rewind Memories — Galería de Regalos Musicales</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="header-content">
+      <a href="#" class="brand-logo">
+        <img id="brand-logo-img" src="/src/assets/brand/by-jev.svg" alt="Logotipo BY JEV — Rewind Memories" class="brand-logo-img">
+        <span class="brand-logo-text">Rewind Memories</span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#galeria" class="nav-link">Galería</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <section class="hero-section">
+      <div class="hero-content">
+        <span class="hero-badge">Colección Nostalgia & Audio</span>
+        <h1 class="hero-title">Tus momentos más felices grabados en música</h1>
+        <p class="hero-description">
+          Personaliza cassettes, vinilos y detalles melódicos creados a la medida para revivir tus canciones favoritas con las personas que amas.
+        </p>
+      </div>
+    </section>
+
+    <section id="galeria" class="gallery-section">
+      <div class="gallery-header">
+        <h2 class="gallery-title">Nuestra Colección</h2>
+      </div>
+
+      <div class="filter-controls">
+        <div id="category-filters" class="category-filters" role="group" aria-label="Filtro por categoría"></div>
+
+        <div class="price-filter-container">
+          <label for="max-price" class="price-filter-label">Precio máximo</label>
+          <div class="price-input-wrapper">
+            <span class="currency-symbol">$</span>
+            <input type="number" id="max-price" class="price-input" min="0" step="any" placeholder="Ej. 30.00" aria-describedby="price-error">
+            <button type="button" id="apply-price-filter" class="price-filter-btn">Aplicar precio</button>
+            <button type="button" id="clear-price-filter" class="price-clear-btn">Limpiar precio</button>
+          </div>
+          <span id="price-error" class="price-error" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <div id="product-grid" class="product-grid"></div>
+    </section>
+
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <p class="footer-brand">Rewind Memories</p>
+      <p class="footer-tagline">Regalos personalizados que hacen sonar tus mejores momentos.</p>
+      <p class="footer-copy">Rewind Memories &copy; 2026 — Melodías que perduran.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
